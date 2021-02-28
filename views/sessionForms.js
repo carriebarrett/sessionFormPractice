@@ -32,7 +32,7 @@ app.get('/', function(req, res) {
 
 app.post('/', function(req, res) {
 	var context = {};
-	if (req.body[nameSubmit]) {
+	if (req.body['nameSubmit']) {
 		req.session.name = req.body.name;
 	}
 
